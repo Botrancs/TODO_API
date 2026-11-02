@@ -1,0 +1,36 @@
+{
+  "name": "todo_api",
+  "version": "1.0.0",
+  "description": "TODO API",
+  "keywords": [
+    "API"
+  ],
+  "homepage": "https://github.com/Botrancs/TODO_API#readme",
+  "bugs": {
+    "url": "https://github.com/Botrancs/TODO_API/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Botrancs/TODO_API.git"
+  },
+  "license": "ISC",
+  "author": "BBL",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "migrate": "node migrations/migration.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "moment": "^2.31.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

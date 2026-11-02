@@ -1,0 +1,39 @@
+@host = http://localhost
+@port = 3003
+@server = {{host}}:{{port}}
+
+### GET all tasks
+GET {{server}}/api/tasks
+
+### GET a task by ID
+GET {{server}}/api/tasks/1
+Content-Type: application/json
+
+### POST new task
+POST {{server}}/api/tasks
+Content-Type: application/json
+
+{
+    "title": "New Task",
+    "description": "This is a new task",
+    "deadline": "2026-12-01"
+}
+
+### PATCH new task
+PATCH {{server}}/api/tasks/1
+Content-Type: application/json
+
+{
+    "title": "New Task",
+    "description": "This is a new task",
+    "deadline": "2026-12-01",
+    "completed": "true"
+}
+
+### DELETE a task by ID
+DELETE {{server}}/api/tasks/1
+Content-Type: application/json
+
+### DELETE all tasks
+DELETE {{server}}/api/tasks
+Content-Type: application/json
